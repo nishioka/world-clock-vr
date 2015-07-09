@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Clock VR</title>
+    <meta charset="UTF-8">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="./js/three.min.js" type="text/javascript"></script>
+    <script src="./js/OrbitControls.js" type="text/javascript"></script>
+    <script src="./js/VRFlyControls.js" type="text/javascript"></script>
+    <script src="./js/VREffect.js" type="text/javascript"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
+</head>
+<body>
+    <div id="vrContainer" class="absolute top-0 left-0 full-width full-height"></div>
+    <div style="bottom: 150px" class="absolute right-2 bottom-2">
+        <div class="relative right-align">
+            <!-- ------------ VR detected, enter VR -------------->
+            <div id="enterVR" class="p2 cursor-pointer">
+                <div class="table">
+                    <div class="inline-block b-solid b-white hover-blue1 rounded2">
+                        <img src="images/icon-goggles-2-white.svg" alt="Enter VR" class="w6">
+                    </div>
+                </div>
+            </div>
+            <!-- ------------ No VR detected -------------->
+            <div id="getVR" class="white p2 bg-pink rounded2 display-none">
+                <div class="table">
+                    <div class="table-cell left-align pr2 f-small"><span class="light nowrap">Your browser does not support virtual reality.<br>Use <a href="http://mozvr.com/downloads" class="medium nowrap basiclink-white">Firefox with VR</a> and an Oculus Rift<br>to enter the full VR web experience.</span>
+                    </div>
+                    <div class="table-cell">
+                        <a href="http://mozvr.com/downloads" class="inline-block bg-lighten2 b2 b-solid b-white hover-blue1 rounded2">
+                            <img src="images/icon-goggles-1-outlinewhite.svg" alt="Enter VR" class="w5 p2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/clock.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

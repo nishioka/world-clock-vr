@@ -1,0 +1,3 @@
+{
+    "predef": ["THREE", "Promise", "HMDVRDevice", "PositionSensorVRDevice", "self", "io", "window"]
+}
